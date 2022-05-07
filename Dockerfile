@@ -1,2 +1,2 @@
 FROM ghcr.io/home-assistant/home-assistant:stable
-RUN pkg add vlc alsa-utils
+RUN pkg update && pkg add vlc alsa-utils
