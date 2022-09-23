@@ -10,7 +10,7 @@ pipeline {
         stage('Build Docker Image') {
             steps {
                 script {
-                    image = docker.build("siwatinc/homeassistant-plus:latest")
+                    image = docker.build("siwatinc/homeassistant-plus:latest",'./ --no-cache')
                 }
             }
         }
